@@ -1,29 +1,23 @@
-package com.methe.assignmentapp.view.home
+package com.methe.assignmentapp.view.note
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.replace
 import com.methe.assignmentapp.R
-import com.methe.assignmentapp.databinding.FragmentHomeBinding
-import com.methe.assignmentapp.utils.Constants
-import com.methe.assignmentapp.utils.PrefsHelper
-import com.methe.assignmentapp.view.screen.ScreenOneFragment
-import com.methe.assignmentapp.view.screen.ScreenTwoFragment
+import com.methe.assignmentapp.databinding.FragmentNoteBinding
 
-class HomeFragment : Fragment() {
+class NoteFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentNoteBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(layoutInflater)
+        _binding = FragmentNoteBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -36,4 +30,5 @@ class HomeFragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
+
 }

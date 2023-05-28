@@ -1,7 +1,8 @@
-package com.methe.assignmentapp
+package com.methe.assignmentapp.view.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.methe.assignmentapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

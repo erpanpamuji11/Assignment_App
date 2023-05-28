@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/screenTwoFragment">
+
+    <fragment
+        android:id="@+id/screenOneFragment"
+        android:name="com.methe.assignmentapp.view.screen.ScreenOneFragment"
+        android:label="fragment_screen_one"
+        tools:layout="@layout/fragment_screen_one" />
+    <fragment
+        android:id="@+id/screenTwoFragment"
+        android:name="com.methe.assignmentapp.view.screen.ScreenTwoFragment"
+        android:label="fragment_screen_two"
+        tools:layout="@layout/fragment_screen_two" >
+        <action
+            android:id="@+id/action_screenTwoFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_screenTwoFragment_to_qrCodeFragment"
+            app:destination="@id/qrCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenThreeFragment"
+        android:name="com.methe.assignmentapp.view.screen.ScreenThreeFragment"
+        android:label="fragment_screen_three"
+        tools:layout="@layout/fragment_screen_three" />
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.methe.assignmentapp.view.note.add.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.methe.assignmentapp.view.note.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_noteFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrCodeFragment"
+        android:name="com.methe.assignmentapp.view.qrcode.QrCodeFragment"
+        android:label="fragment_qr_code"
+        tools:layout="@layout/fragment_qr_code" />
+</navigation>

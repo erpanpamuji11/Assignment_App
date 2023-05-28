@@ -19,6 +19,7 @@ import com.methe.assignmentapp.R
 import com.methe.assignmentapp.databinding.FragmentLoginBinding
 import com.methe.assignmentapp.utils.Constants
 import com.methe.assignmentapp.utils.PrefsHelper
+import com.methe.assignmentapp.view.home.HomeActivity
 import java.util.concurrent.Executor
 
 class LoginFragment : Fragment() {
@@ -50,8 +51,8 @@ class LoginFragment : Fragment() {
                 val email = etEmail.text.toString().trim()
                 val password = etPassword.text.toString().trim()
                 if (sharedPrefs.getString(Constants.PREF_EMAIL) == email && sharedPrefs.getString(Constants.PREF_PASSWORD) == password) {
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
                     sharedPrefs.put(Constants.PREF_IS_LOGIN, true)
+                    startActivity(Intent(requireContext(), HomeActivity::class.java))
                     Toast.makeText(requireContext(), "Login Succeed", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(requireContext(), "Login Failed", Toast.LENGTH_SHORT).show()
@@ -105,7 +106,7 @@ class LoginFragment : Fragment() {
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 super.onAuthenticationSucceeded(result)
                 Toast.makeText(requireContext(), "Authentication Success", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                startActivity(Intent(requireContext(), HomeActivity::class.java))
             }
 
             override fun onAuthenticationFailed() {
@@ -124,7 +125,7 @@ class LoginFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         if (sharedPrefs.getBoolean(Constants.PREF_IS_LOGIN)) {
-            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            startActivity(Intent(requireContext(), HomeActivity::class.java))
         }
     }
 
