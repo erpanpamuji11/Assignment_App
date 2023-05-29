@@ -46,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email_text">
 
         <EditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
@@ -96,10 +97,11 @@
         app:passwordToggleTint="@color/grey_text">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
-            android:hint="Masukan Password"
+            android:hint="@string/enter_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:paddingTop="8dp" />
@@ -125,7 +127,7 @@
         android:layout_marginBottom="@dimen/dimen_10"
         android:background="@drawable/button_background_selector"
         android:fontFamily="@font/poppins_regular"
-        android:text="Daftar"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -152,15 +154,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="3dp"
-            android:text="Sudah Punya Akun?"
+            android:text="@string/has_account"
             android:textColor="@color/black"
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/tv_move_login"
             style="@style/text_view_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masuk"
+            android:text="@string/login"
             android:textColor="@color/blue_app"
             android:textSize="12sp" />
     </LinearLayout>

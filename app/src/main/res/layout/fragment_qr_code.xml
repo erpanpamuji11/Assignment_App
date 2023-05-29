@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/image_view" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"
@@ -24,7 +25,7 @@
         android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_20"
         android:backgroundTint="@color/blue_bg_job"
-        android:hint="Masukan Data"
+        android:hint="@string/enter_data"
         android:paddingHorizontal="@dimen/dimen_16"
         android:paddingVertical="@dimen/dimen_10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +34,10 @@
         app:layout_constraintTop_toBottomOf="@+id/qrCode" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generate_code"
         android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
-        android:text="Generate QR Code"
+        android:text="@string/generate_qr_code"
         android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_20"
         app:layout_constraintEnd_toEndOf="parent"

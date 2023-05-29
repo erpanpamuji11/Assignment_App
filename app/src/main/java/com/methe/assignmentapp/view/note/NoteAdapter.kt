@@ -30,9 +30,9 @@ class NoteAdapter(private val onNoteClicked: (Note) -> Unit) : RecyclerView.Adap
     inner class NoteViewHolder(private val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(note: Note) {
             with(binding) {
-                tvItemDate.text = note.date
-                tvItemDescription.text = note.description
-                cvItemNote.setOnClickListener {
+                tvDate.text = note.date
+                tvDescription.text = note.description
+                cvNote.setOnClickListener {
                     onNoteClicked(note)
                 }
             }

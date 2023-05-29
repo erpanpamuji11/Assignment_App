@@ -55,7 +55,7 @@ class AddNoteFragment : Fragment() {
             if (note != null) {
                 note?.let { note ->
                     binding.apply {
-                        edtDescription.setText(note.description)
+                        etDescription.setText(note.description)
                     }
                 }
             }
@@ -68,10 +68,10 @@ class AddNoteFragment : Fragment() {
         binding.btnSubmit.apply {
             text = btnTitle
             setOnClickListener {
-                val description = binding.edtDescription.text.toString().trim()
+                val description = binding.etDescription.text.toString().trim()
                 when {
                     description.isEmpty() -> {
-                        binding.edtDescription.error = getString(R.string.empty)
+                        binding.etDescription.error = getString(R.string.empty)
                     }
                     else -> {
                         note.let { note ->

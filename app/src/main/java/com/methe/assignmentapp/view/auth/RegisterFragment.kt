@@ -42,7 +42,7 @@ class RegisterFragment : Fragment() {
                 }
             }
 
-            btnMoveLogin.setOnClickListener {
+            tvMoveLogin.setOnClickListener {
                 findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }

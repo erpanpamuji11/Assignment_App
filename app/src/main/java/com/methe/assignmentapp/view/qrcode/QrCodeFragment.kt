@@ -29,7 +29,7 @@ class QrCodeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnGenerateQrCode.setOnClickListener {
+        binding.btnGenerateCode.setOnClickListener {
             generateQrCode()
         }
     }

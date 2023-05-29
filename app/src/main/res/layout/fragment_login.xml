@@ -47,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email_text">
 
         <EditText
+            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
@@ -97,6 +98,7 @@
         app:passwordToggleTint="@color/grey_text">
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
@@ -169,6 +171,7 @@
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/tv_move_signup"
             style="@style/text_view_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -201,12 +204,14 @@
             android:textColor="@color/grey_text"
             android:theme="@style/text_view_12" />
         <ImageView
+            android:id="@+id/iv_fingerprint"
             android:layout_width="@dimen/dimen_50"
             android:layout_height="@dimen/dimen_50"
             android:layout_marginTop="@dimen/dimen_20"
             android:src="@drawable/ic_fingerprint_blue"
             android:contentDescription="@string/image_view" />
         <TextView
+            android:id="@+id/tv_check_biometric"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_5"

@@ -31,7 +31,7 @@ class ScreenTwoFragment : Fragment() {
         versionInfo()
 
         binding.apply {
-            btnQrCode.setOnClickListener {
+            btnGenerateCode.setOnClickListener {
                 findNavController().navigate(R.id.action_screenTwoFragment_to_qrCodeFragment)
             }
 
@@ -49,7 +49,7 @@ class ScreenTwoFragment : Fragment() {
         val sdk = Build.VERSION.SDK_INT.toString()+""
         val versionCode = BuildConfig.VERSION_CODE
 
-        binding.tvVersionInfo.text = "Manufacture: $manufacturer\n" +
+        binding.tvVersion.text = "Manufacture: $manufacturer\n" +
                 "Model: $model\n" +
                 "Build: $build\n" +
                 "SDK: $sdk\n" +

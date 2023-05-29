@@ -34,4 +34,6 @@
     <string name="see_map">Lihat Peta</string>
     <string name="logout">Logout</string>
     <string name="magnetometer">Magnetometer</string>
+    <string name="has_account">Sudah Punya Akun?</string>
+    <string name="enter_data">Masukan Data</string>
 </resources>
