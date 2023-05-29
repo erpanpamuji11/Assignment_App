@@ -1,26 +1,37 @@
 <resources>
     <string name="app_name">AssignmentApp</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="title">Judul</string>
     <string name="description">Deskripsi</string>
-    <string name="submit">Submit</string>
     <string name="delete">Hapus</string>
     <string name="date">Date</string>
-    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
-    <string name="message_ok">OK</string>
-    <string name="cancel">Batal</string>
     <string name="empty">Field can not be blank</string>
     <string name="update">Update</string>
     <string name="change">Ubah</string>
     <string name="add">Tambah</string>
     <string name="save">Simpan</string>
-    <string name="yes">Ya</string>
-    <string name="no">Tidak</string>
-    <string name="message_cancel">Apakah anda ingin membatalkan perubahan pada form?</string>
-    <string name="message_delete">Apakah anda yakin ingin menghapus item ini?</string>
     <string name="added">Satu item berhasil ditambahkan</string>
     <string name="changed">Satu item berhasil diubah</string>
     <string name="deleted">Satu item berhasil dihapus</string>
+    <string name="email">Email</string>
+    <string name="image_view">image_view</string>
+    <string name="enter_email">Masukan Email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Masukan Password</string>
+    <string name="forget_password">Lupa Password?</string>
+    <string name="login">Masuk</string>
+    <string name="not_have_account">Belum Punya Akun</string>
+    <string name="register">Daftar</string>
+    <string name="or">atau</string>
+    <string name="enter_with_fingerprint">Masuk dengan Fingerprint anda</string>
+    <string name="register_to_start">Daftar untuk memulai</string>
+    <string name="accelerator">Accelerator</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="current_location">Current Location</string>
+    <string name="location">Location</string>
+    <string name="note_crud">Note CRUD</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="see_map">Lihat Peta</string>
+    <string name="logout">Logout</string>
+    <string name="magnetometer">Magnetometer</string>
 </resources>

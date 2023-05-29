@@ -16,7 +16,7 @@ class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
-    lateinit var sharedPrefs: PrefsHelper
+    private lateinit var sharedPrefs: PrefsHelper
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -1,5 +1,6 @@
 package com.methe.assignmentapp.view.screen
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,9 +34,14 @@ class ScreenTwoFragment : Fragment() {
             btnQrCode.setOnClickListener {
                 findNavController().navigate(R.id.action_screenTwoFragment_to_qrCodeFragment)
             }
+
+            btnNoteCrud.setOnClickListener {
+                findNavController().navigate(R.id.action_screenTwoFragment_to_noteFragment)
+            }
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun versionInfo(){
         val manufacturer = Build.MANUFACTURER+""
         val model = Build.MODEL+""

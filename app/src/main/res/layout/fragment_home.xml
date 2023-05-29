@@ -7,7 +7,6 @@
     tools:context=".view.home.HomeFragment">
 
     <FrameLayout
-        android:id="@+id/frame_layout"
         android:layout_width="@dimen/dimen_0"
         android:layout_height="@dimen/dimen_0"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"

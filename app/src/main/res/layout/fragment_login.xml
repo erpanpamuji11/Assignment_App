@@ -16,23 +16,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/image_view" />
 
     <TextView
         android:id="@+id/tv_email_text"
-        style="@style/text_view_14.grey"
+        style="@style/text_view_12.grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
         android:layout_marginTop="@dimen/dimen_40"
-        android:text="Email"
+        android:text="@string/email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo_text" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_email"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_55"
+        android:layout_height="@dimen/dimen_50"
         android:layout_marginHorizontal="@dimen/dimen_30"
         android:layout_marginTop="@dimen/dimen_2"
         android:background="@drawable/custom_input"
@@ -46,11 +47,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email_text">
 
         <EditText
-            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
-            android:hint="Masukan Email"
+            android:hint="@string/enter_email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:paddingTop="8dp" />
@@ -58,7 +58,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/et_email_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
@@ -70,19 +69,19 @@
 
     <TextView
         android:id="@+id/tv_password_text"
-        style="@style/text_view_14.grey"
+        style="@style/text_view_12.grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
         android:layout_marginTop="@dimen/dimen_20"
-        android:text="Password"
+        android:text="@string/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_email" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_password"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_55"
+        android:layout_height="@dimen/dimen_50"
         android:layout_marginHorizontal="@dimen/dimen_30"
         android:layout_marginTop="@dimen/dimen_2"
         android:background="@drawable/custom_input"
@@ -98,18 +97,16 @@
         app:passwordToggleTint="@color/grey_text">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
-            android:hint="Masukan Password"
+            android:hint="@string/enter_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:paddingTop="8dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/et_password_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
@@ -126,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_10"
         android:layout_marginEnd="@dimen/dimen_30"
-        android:text="Lupa Password?"
+        android:text="@string/forget_password"
         android:textColor="@color/grey_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_password" />
@@ -134,17 +131,17 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:layout_width="@dimen/dimen_0"
-        android:layout_height="@dimen/dimen_55"
+        android:layout_height="@dimen/dimen_50"
         android:layout_marginStart="@dimen/dimen_30"
-        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
         android:layout_marginEnd="@dimen/dimen_30"
         android:layout_marginBottom="@dimen/dimen_10"
         android:background="@drawable/button_background_selector"
         android:fontFamily="@font/poppins_regular"
-        android:text="Masuk"
+        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linear_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -167,27 +164,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="3dp"
-            android:text="Belum Punya Akun"
+            android:text="@string/not_have_account"
             android:textColor="@color/grey_text"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_move_signUp"
             style="@style/text_view_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Daftar"
+            android:text="@string/register"
             android:textColor="@color/blue_see_all"
             android:textSize="12sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear_3"
         android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -196,23 +191,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="atau"
+            android:text="@string/or"
             android:textColor="@color/grey_text"
             android:theme="@style/text_view_12" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masuk dengan Fingerprint anda"
+            android:text="@string/enter_with_fingerprint"
             android:textColor="@color/grey_text"
             android:theme="@style/text_view_12" />
         <ImageView
-            android:id="@+id/iv_fingerprint"
             android:layout_width="@dimen/dimen_50"
             android:layout_height="@dimen/dimen_50"
             android:layout_marginTop="@dimen/dimen_20"
-            android:src="@drawable/ic_fingerprint_blue"/>
+            android:src="@drawable/ic_fingerprint_blue"
+            android:contentDescription="@string/image_view" />
         <TextView
-            android:id="@+id/tv_checkBiometric"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_5"

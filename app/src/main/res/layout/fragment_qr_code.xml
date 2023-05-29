@@ -33,7 +33,6 @@
         app:layout_constraintTop_toBottomOf="@+id/qrCode" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_generateQrCode"
         android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
         android:text="Generate QR Code"

@@ -8,12 +8,12 @@
 
     <item
         android:id="@+id/screenTwoFragment"
-        android:title="Camera"
-        android:icon="@drawable/ic_camera_alt_24"/>
+        android:title="Utilities"
+        android:icon="@drawable/ic_event_note"/>
 
     <item
         android:id="@+id/screenThreeFragment"
         android:title="Graphic"
-        android:icon="@drawable/ic_camera_alt_24"/>
+        android:icon="@drawable/ic_map"/>
 
 </menu>

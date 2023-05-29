@@ -19,12 +19,12 @@
         tools:listitem="" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:foregroundGravity="bottom"
         android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="@color/blue_app"
         app:fabSize="normal"
         app:layout_anchor="@id/rv_notes"
         app:layout_anchorGravity="bottom|end"

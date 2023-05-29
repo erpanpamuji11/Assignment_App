@@ -2,8 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_home_graph"
-    app:startDestination="@id/screenTwoFragment">
+    app:startDestination="@id/screenOneFragment">
 
     <fragment
         android:id="@+id/screenOneFragment"
@@ -26,12 +25,21 @@
         android:id="@+id/screenThreeFragment"
         android:name="com.methe.assignmentapp.view.screen.ScreenThreeFragment"
         android:label="fragment_screen_three"
-        tools:layout="@layout/fragment_screen_three" />
+        tools:layout="@layout/fragment_screen_three" >
+        <action
+            android:id="@+id/action_screenThreeFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
         android:name="com.methe.assignmentapp.view.note.add.AddNoteFragment"
         android:label="fragment_add_note"
-        tools:layout="@layout/fragment_add_note" />
+        tools:layout="@layout/fragment_add_note" >
+        <argument
+            android:name="note_arguments"
+            app:argType="com.methe.assignmentapp.model.Note"
+            app:nullable="true"/>
+    </fragment>
     <fragment
         android:id="@+id/noteFragment"
         android:name="com.methe.assignmentapp.view.note.NoteFragment"
@@ -46,4 +54,9 @@
         android:name="com.methe.assignmentapp.view.qrcode.QrCodeFragment"
         android:label="fragment_qr_code"
         tools:layout="@layout/fragment_qr_code" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.methe.assignmentapp.view.maps.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

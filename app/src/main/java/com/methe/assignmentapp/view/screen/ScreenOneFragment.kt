@@ -31,9 +31,6 @@ class ScreenOneFragment : Fragment(), SensorEventListener {
     private val binding get() = _binding!!
     private lateinit var calender: Calendar
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
-
-//    lateinit var featureGRV: GridView
-//    lateinit var featureList: List<GridViewModal>
     private lateinit var sensorManager: SensorManager
 
     override fun onCreateView(
@@ -47,26 +44,6 @@ class ScreenOneFragment : Fragment(), SensorEventListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        featureGRV = binding.gridView
-//        featureList = ArrayList()
-//
-//        featureList = featureList + GridViewModal("Accelerator", R.drawable.ic_startup_white)
-//        featureList = featureList + GridViewModal("Gyroscope", R.drawable.ic_startup_white)
-//        featureList = featureList + GridViewModal("MagneteMatter", R.drawable.ic_startup_white)
-//        featureList = featureList + GridViewModal("Location", R.drawable.ic_startup_white)
-//
-//        val courseAdapter = GridFeatureAdapter(featureList = featureList, requireContext())
-//
-//        featureGRV.adapter = courseAdapter
-//        featureGRV.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-//            // inside on click method we are simply displaying
-//            // a toast message with course name.
-//            Toast.makeText(
-//                requireContext(), featureList[position].featureName + " selected",
-//                Toast.LENGTH_SHORT
-//            ).show()
-//        }
 
         calender = Calendar.getInstance()
         val currentDate = DateFormat.getDateInstance(android.icu.text.DateFormat.FULL).format(calender.time)
@@ -139,10 +116,10 @@ class ScreenOneFragment : Fragment(), SensorEventListener {
                 translationY = sides * 10
             }
 
-            val color = if (upDown.toInt() == 0 && sides.toInt() == 0) Color.GREEN else Color.GRAY
+            val color = if (upDown.toInt() == 0 && sides.toInt() == 0) Color.GREEN else Color.WHITE
             binding.square.apply {
                 setBackgroundColor(color)
-                text = "X: ${sides}\n Y: ${upDown}\n Z: ${ward}"
+                text = "X: ${sides}\n Y: ${upDown}\n Z: $ward"
             }
         }
 
@@ -155,7 +132,11 @@ class ScreenOneFragment : Fragment(), SensorEventListener {
         }
 
         if (event?.sensor?.type == Sensor.TYPE_MAGNETIC_FIELD) {
+            val x = event.values[0]
+            val y = event.values[1]
+            val z = event.values[2]
 
+            binding.tvMagnetic.text = "X: $x \nY: $y \nZ: $z"
         }
     }
 

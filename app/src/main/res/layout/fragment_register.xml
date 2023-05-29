@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/text_view_14"
         android:textSize="25sp"
-        android:text="Daftar untuk memulai"
+        android:text="@string/register_to_start"
         android:layout_marginStart="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_50"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,20 +20,20 @@
 
     <TextView
         android:id="@+id/tv_email_text"
-        style="@style/text_view_14.grey"
+        style="@style/text_view_12.grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_30"
+        android:layout_marginStart="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_40"
-        android:text="Email"
+        android:text="@string/email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_register_text" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_email"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_55"
-        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_2"
         android:background="@drawable/custom_input"
         android:elevation="@dimen/dimen_3"
@@ -46,11 +46,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email_text">
 
         <EditText
-            android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
-            android:hint="Masukan Email"
+            android:hint="@string/enter_email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:paddingTop="8dp" />
@@ -58,7 +57,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/et_email_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
@@ -70,20 +68,20 @@
 
     <TextView
         android:id="@+id/tv_password_text"
-        style="@style/text_view_14.grey"
+        style="@style/text_view_12.grey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_30"
+        android:layout_marginStart="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_20"
-        android:text="Password"
+        android:text="@string/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_email" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_password"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_55"
-        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_2"
         android:background="@drawable/custom_input"
         android:elevation="@dimen/dimen_3"
@@ -98,7 +96,6 @@
         app:passwordToggleTint="@color/grey_text">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/custom_input"
@@ -109,7 +106,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/et_password_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_30"
@@ -122,17 +118,17 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_regis"
         android:layout_width="@dimen/dimen_0"
-        android:layout_height="@dimen/dimen_55"
-        android:layout_marginStart="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_40"
-        android:layout_marginEnd="@dimen/dimen_30"
+        android:layout_marginEnd="@dimen/dimen_20"
         android:layout_marginBottom="@dimen/dimen_10"
         android:background="@drawable/button_background_selector"
         android:fontFamily="@font/poppins_regular"
         android:text="Daftar"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +141,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/dimen_30"
-        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,7 +157,6 @@
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/btn_move_login"
             style="@style/text_view_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -4,37 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/dimen_20"
     tools:context=".view.screen.ScreenTwoFragment">
 
-    <TextView
-        android:id="@+id/tv_version_info"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_1"
+        android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
-        android:text="Version Info"
-        android:theme="@style/text_view_14.grey"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:background="@drawable/bg_feature"
+        android:padding="@dimen/dimen_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Version Info"
+            android:theme="@style/text_view_14"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_note_crud"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
-        android:text="Note CRUD"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:text="@string/note_crud"
         android:textAllCaps="false"
-        app:cornerRadius="@dimen/dimen_20"
-        android:layout_marginTop="@dimen/dimen_20"
+        app:cornerRadius="@dimen/dimen_10"
+        app:icon="@drawable/ic_edit_note"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_version_info" />
+        app:layout_constraintTop_toBottomOf="@+id/constraint_1" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_qr_code"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/dimen_0"
         android:layout_height="wrap_content"
-        android:text="Generate QR Code"
-        app:cornerRadius="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:text="@string/generate_qr_code"
         android:textAllCaps="false"
-        android:layout_marginTop="@dimen/dimen_20"
+        app:cornerRadius="@dimen/dimen_10"
+        app:icon="@drawable/ic_qr_code"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_note_crud" />
 

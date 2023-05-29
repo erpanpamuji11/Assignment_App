@@ -106,6 +106,7 @@ class LoginFragment : Fragment() {
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 super.onAuthenticationSucceeded(result)
                 Toast.makeText(requireContext(), "Authentication Success", Toast.LENGTH_SHORT).show()
+                sharedPrefs.put(Constants.PREF_IS_LOGIN, true)
                 startActivity(Intent(requireContext(), HomeActivity::class.java))
             }
 

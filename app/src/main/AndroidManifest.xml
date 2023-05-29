@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AssignmentApp"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDViwrREXJ3KK52ub0x42NmBXH3j5cWyyg" />
         <activity
             android:name=".view.home.HomeActivity"
             android:exported="false">
